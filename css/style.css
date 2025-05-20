@@ -1560,23 +1560,23 @@ p {
   gap: 1.5rem; /* Optional: space between cards */
 }
 .bus {
-  flex: 1 1 calc(24% - 1.5rem); /* 4 per row */
-  max-width: calc(24% - 1.5rem);
+  flex: 1 1 calc(25% - 1.5rem); /* 4 per row */
+  max-width: calc(25% - 1.5rem);
   
 }
 .bus1 {
-  flex: 1 1 calc(24% - 1.5rem); /* 4 per row */
-  max-width: calc(24% - 1.5rem);
+  flex: 1 1 calc(25% - 1.5rem); /* 4 per row */
+  max-width: calc(25% - 1.5rem);
 }
 
 @media (max-width: 991.98px) {
   .bus {
-    flex: 1 1 calc(100% - 1.5rem); /* 2 per row on tablets */
-    max-width: calc(100% - 1.5rem);
+    flex: 1 1 calc(50% - 1.5rem); /* 2 per row on tablets */
+    max-width: calc(50% - 1.5rem);
   }
   .bus1 {
-    flex: 1 1 calc(100% - 1.5rem); /* 2 per row on tablets */
-    max-width: calc(100% - 1.5rem);
+    flex: 1 1 calc(50% - 1.5rem); /* 2 per row on tablets */
+    max-width: calc(50% - 1.5rem);
   }
 }
 @media (max-width: 575.98px) {
@@ -1590,6 +1590,13 @@ p {
     max-width: 100%;
     
   }
+  * {
+  box-sizing: border-box;
+}
+[data-aos] {
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
  .logo{
   width: 150px;
   position: relative;
