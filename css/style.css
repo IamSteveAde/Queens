@@ -1593,10 +1593,7 @@ p {
   * {
   box-sizing: border-box;
 }
-[data-aos] {
-  backface-visibility: hidden;
-  overflow-x: hidden;
-}
+
  .logo{
   width: 150px;
   position: relative;
