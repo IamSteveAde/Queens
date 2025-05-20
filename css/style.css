@@ -1531,7 +1531,7 @@ p {
   z-index: -1;
   pointer-events: none; /* Prevents it from blocking clicks */
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .bus{
@@ -1560,22 +1560,23 @@ p {
   gap: 1.5rem; /* Optional: space between cards */
 }
 .bus {
-  flex: 1 1 calc(25% - 1.5rem); /* 4 per row */
-  max-width: calc(25% - 1.5rem);
+  flex: 1 1 calc(24% - 1.5rem); /* 4 per row */
+  max-width: calc(24% - 1.5rem);
+  
 }
 .bus1 {
-  flex: 1 1 calc(25% - 1.5rem); /* 4 per row */
-  max-width: calc(25% - 1.5rem);
+  flex: 1 1 calc(24% - 1.5rem); /* 4 per row */
+  max-width: calc(24% - 1.5rem);
 }
 
 @media (max-width: 991.98px) {
   .bus {
-    flex: 1 1 calc(50% - 1.5rem); /* 2 per row on tablets */
-    max-width: calc(50% - 1.5rem);
+    flex: 1 1 calc(100% - 1.5rem); /* 2 per row on tablets */
+    max-width: calc(100% - 1.5rem);
   }
   .bus1 {
-    flex: 1 1 calc(50% - 1.5rem); /* 2 per row on tablets */
-    max-width: calc(50% - 1.5rem);
+    flex: 1 1 calc(100% - 1.5rem); /* 2 per row on tablets */
+    max-width: calc(100% - 1.5rem);
   }
 }
 @media (max-width: 575.98px) {
@@ -1637,4 +1638,20 @@ html{
 }
 .notdesktop{
   display: none;
+}
+.modal-body {
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+@media (max-width: 767.98px) {
+  .modal-dialog {
+    max-width: 95%;
+    margin: 1.75rem auto;
+  }
+
+  .modal-content {
+    height: auto;
+    max-height: 90vh;
+  }
 }

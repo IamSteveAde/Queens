@@ -30,6 +30,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 
@@ -37,6 +43,55 @@
 </head>
 
 <body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- THIS IS WHAT IS LIKELY BROKEN ON YOUR SIDE -->
+      <div class="modal-body">
+        <form class="form">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <select name="projectGoal" id="projectGoal" class="form-control custom-select">
+                <option value="">Select Project Goal</option>
+                <option value="impact">Lasting Impact</option>
+                <option value="value">Long-Term Value</option>
+                <option value="change">Transformational Change</option>
+                <option value="results">Measurable Results</option>
+                <option value="progress">Sustainable Progress</option>
+                <option value="growth">Scalable Growth</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 mb-3">
+              <input type="text" class="form-control" name="projectTimeline" placeholder="Project Timeline (e.g. Q3 2025)">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <input type="text" class="form-control" name="teamSize" placeholder="Team Size or Stakeholders">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <input type="submit" class="btn btn-primary btn-block" value="Request Consultation">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 	<div class="site-mobile-menu site-navbar-target">
@@ -82,7 +137,12 @@
      data-aos-easing="ease-in-out"
      data-aos-offset="200"
      data-aos-once="true">We Bring Purpose to Every Project</span> Delivering <span style="color: gold;" class="typed-words"></span></h1>
-						<p><a href="#" class="btn btn-primary notdesktop" id="notdesk">Get in Touch</a></p>
+						
+						<p>
+  <a href="#" class="btn btn-primary notdesktop" data-toggle="modal" data-target="#contactModal">
+    Get in Touch
+  </a>
+</p>
 						<div class="row ">
 							<div class="col-12">
 								<form class="form oneside">
@@ -169,7 +229,12 @@
 
 					
 
-					<p><a href="#" class="btn btn-primary">Get Started</a></p>
+					<p>
+  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+    Get in Touch
+  </a>
+</p>
+
 
 					
 				</div>
@@ -193,7 +258,11 @@
 					
 					<h2 class="section-title text-center mb-3" >Our Services</h2>
 					<p>At Queens Consulting and Management Services, we provide expert-led project consulting and management solutions that guide your project from concept to completion</p>
-					<a href="#" class="btn btn-primary">Get Started</a></p>
+					<p>
+  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+    Get in Touch
+  </a>
+</p>
 				</div>
 			</div>
 			
@@ -657,7 +726,11 @@
 				<div class="col-md-12">
 					<h2 class="mb-2 text-white">Let’s Build Something Greater</h2>
 					<p class="mb-4 lead text-white text-white-opacity">Your goals are our priority. Let’s collaborate to deliver projects that shape the future—sustainably, effectively, and successfully.</p>
-					<p class="mb-0"><a href="booking.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
+					<p>
+  <a href="#" class="btn btn-primary " data-toggle="modal" data-target="#contactModal">
+    Get in Touch
+  </a>
+</p>
 				</div>
 			</div>
 		</div>
@@ -865,9 +938,11 @@
 	<!-- Bootstrap JS (including Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
   AOS.init();
 </script>
+
 
 
 
