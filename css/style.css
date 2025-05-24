@@ -1581,13 +1581,17 @@ p {
 }
 @media (max-width: 575.98px) {
   .bus {
-    flex: 1 1 100%; /* 1 per row on mobile */
-    max-width: 100%;
+    flex: 1 1 90%; /* 1 per row on mobile */
+    max-width: 90%;
+    margin-left: 30px;
+    margin-right: 30PX;
     
   }
    .bus1 {
-    flex: 1 1 100%; /* 1 per row on mobile */
-    max-width: 100%;
+    flex: 1 1 90%; /* 1 per row on mobile */
+    max-width: 90%;
+    margin-left: 30px;
+    margin-right: 30PX;
     
   }
   * {
@@ -1658,4 +1662,7 @@ html{
     height: auto;
     max-height: 90vh;
   }
+}
+.lead{
+  margin-top: 30px;
 }
