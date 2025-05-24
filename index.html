@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<link rel="stylesheet" href="css/daterangepicker.css">
 	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="js/main.js">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -58,33 +59,40 @@
 
       <!-- THIS IS WHAT IS LIKELY BROKEN ON YOUR SIDE -->
       <div class="modal-body">
-        <form class="form">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-              <select name="projectGoal" id="projectGoal" class="form-control custom-select">
-                <option value="">Select Project Goal</option>
-                <option value="impact">Lasting Impact</option>
-                <option value="value">Long-Term Value</option>
-                <option value="change">Transformational Change</option>
-                <option value="results">Measurable Results</option>
-                <option value="progress">Sustainable Progress</option>
-                <option value="growth">Scalable Growth</option>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5 mb-3">
-              <input type="text" class="form-control" name="projectTimeline" placeholder="Project Timeline (e.g. Q3 2025)">
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <input type="text" class="form-control" name="teamSize" placeholder="Team Size or Stakeholders">
-            </div>
-          </div>
+       <form class="form" id="projectForm" action="https://formsubmit.co/queensconsulting77@gmail.com" method="POST">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+      <select name="projectGoal" id="projectGoal" class="form-control custom-select" required>
+        <option value="" disabled selected>Select Project Goal</option>
+        <option value="impact">Lasting Impact</option>
+        <option value="value">Long-Term Value</option>
+        <option value="change">Transformational Change</option>
+        <option value="results">Measurable Results</option>
+        <option value="progress">Sustainable Progress</option>
+        <option value="growth">Scalable Growth</option>
+      </select>
+    </div>
 
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mb-3">
-              <input type="submit" class="btn btn-primary btn-block" value="Request Consultation">
-            </div>
-          </div>
-        </form>
+    <div class="col-12 col-md-6 col-lg-5 mb-3">
+      <input type="text" class="form-control" name="projectTimeline" placeholder="Project Timeline (e.g. Q3 2025)" required>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 mb-3">
+      <input type="text" class="form-control" name="teamSize" placeholder="Team Size or Stakeholders" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+      <input type="submit" class="btn btn-primary btn-block" value="Request Consultation">
+    </div>
+  </div>
+
+  <!-- FormSubmit hidden inputs -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+</form>
+
       </div>
     </div>
   </div>
@@ -145,38 +153,43 @@
 </p>
 						<div class="row ">
 							<div class="col-12">
-								<form class="form oneside">
-									<div class="row mb-2">
-									  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-										<select name="projectGoal" id="projectGoal" class="form-control custom-select">
-										  <option value="">Select Project Goal</option>
-										  <option value="impact">Lasting Impact</option>
-										  <option value="value">Long-Term Value</option>
-										  <option value="change">Transformational Change</option>
-										  <option value="results">Measurable Results</option>
-										  <option value="progress">Sustainable Progress</option>
-										  <option value="growth">Scalable Growth</option>
-										</select>
-									  </div>
-								  
-									  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
-										<input type="text" class="form-control" name="projectTimeline" placeholder="Project Timeline (e.g. Q3 2025)">
-									  </div>
-								  
-									  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-										<input type="text" class="form-control" name="teamSize" placeholder="Team Size or Stakeholders">
-									  </div>
-									</div>
-								  
-									<div class="row align-items-center">
-									  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-										<input type="submit" class="btn btn-primary btn-block" style="font-size: 11px;" value="Request Consultation">
-									  </div>
-									  <div class="col-lg-8">
-										
-									  </div>
-									</div>
-								  </form>
+								<form class="form oneside" id="onesideForm" action="https://formsubmit.co/queensconsulting77@gmail.com" method="POST">
+  <div class="row mb-2">
+    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+      <select name="projectGoal" id="projectGoal" class="form-control custom-select" required>
+        <option value="" disabled selected>Select Project Goal</option>
+        <option value="impact">Lasting Impact</option>
+        <option value="value">Long-Term Value</option>
+        <option value="change">Transformational Change</option>
+        <option value="results">Measurable Results</option>
+        <option value="progress">Sustainable Progress</option>
+        <option value="growth">Scalable Growth</option>
+      </select>
+    </div>
+
+    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+      <input type="text" class="form-control" name="projectTimeline" placeholder="Project Timeline (e.g. Q3 2025)" required>
+    </div>
+
+    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+      <input type="text" class="form-control" name="teamSize" placeholder="Team Size or Stakeholders" required>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+      <input type="submit" class="btn btn-primary btn-block" style="font-size: 11px;" value="Request Consultation">
+    </div>
+    <div class="col-lg-8">
+      <!-- Optional message/animation space -->
+    </div>
+  </div>
+
+  <!-- Hidden Formsubmit fields -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+</form>
+
 								  
 							</div>
 						</div>
@@ -211,7 +224,7 @@
      data-aos-duration="1200"
      data-aos-easing="ease-in-out"
      data-aos-offset="200"
-     data-aos-once="true" src="images/stakeholder.jpg" alt="Image" class="img-fluid rounded-20">
+     data-aos-once="true" src="images/WhatsApp Image 2025-05-23 at 20.44.08_4a056e9d.jpg" alt="Image" class="img-fluid rounded-20">
 					</figure>
 				</div>
 				
@@ -406,7 +419,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
 					<div class="counter-wrap">
 						<div class="counter">
-							<span class="" data-number="9313">0</span>
+							<span class="" data-number="54">0</span>
 						</div>
 						<span class="caption">No. of Projects Completed</span>
 					</div>
@@ -414,7 +427,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
 					<div class="counter-wrap">
 						<div class="counter">
-							<span class="" data-number="8492">0</span>
+							<span class="" data-number="40">0</span>
 						</div>
 						<span class="caption">No. of Clients</span>
 					</div>
@@ -422,7 +435,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
 					<div class="counter-wrap">
 						<div class="counter">
-							<span class="" data-number="100">0</span>
+							<span class="" data-number="15">0</span>
 						</div>
 						<span class="caption">No. of Employees</span>
 					</div>
@@ -430,7 +443,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
 					<div class="counter-wrap">
 						<div class="counter">
-							<span class="" data-number="120">0</span>
+							<span class="" data-number="5">0</span>
 						</div>
 						<span class="caption">No. of Countries</span>
 					</div>
@@ -785,9 +798,9 @@
 						<div class="widget">
 							<h3 class="heading">Contact</h3>
 							<ul class="list-unstyled quick-info links">
-								<li class="email"><a href="#">mail@example.com</a></li>
-								<li class="phone"><a href="#">+1 222 212 3819</a></li>
-								<li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+								<li class="email"><a href="#">queensconsulting77@gmail.com</a></li>
+								<li class="phone"><a href="#">09077894668</a></li>
+								<li class="address"><a href="#">Plot 23 block 91 Providence street.  Opposite Briscoe Ford, Lekki phase 1, Lagos, Nigeria</a></li>
 							</ul>
 						</div>
 					</div>
@@ -943,6 +956,70 @@
 <script>
   AOS.init();
 </script>
+<script>
+  document.getElementById('projectForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('✅ Thank you! Your request has been submitted.');
+        form.reset();
+      } else {
+        return response.json().then(data => {
+          if (data.errors) {
+            alert(data.errors.map(error => error.message).join(", "));
+          } else {
+            alert('❌ Oops! Something went wrong.');
+          }
+        });
+      }
+    })
+    .catch(() => {
+      alert('❌ Network error. Please try again.');
+    });
+  });
+</script>
+
+<script>
+  document.getElementById('onesideForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('✅ Your request has been successfully sent!');
+        form.reset();
+      } else {
+        return response.json().then(data => {
+          if (data.errors) {
+            alert(data.errors.map(error => error.message).join(", "));
+          } else {
+            alert('❌ Something went wrong. Try again.');
+          }
+        });
+      }
+    })
+    .catch(() => {
+      alert('❌ Network error. Please check your connection and try again.');
+    });
+  });
+</script>
+
 
 
 
